@@ -160,19 +160,19 @@ body {
 .slogan {
   font-size: 6.4rem;
   font-weight: bold;
-  margin-top: 5%;
+  margin-top: 7rem;
 }
 
 .coverScope {
   font-size: 2rem;
   display: block;
-  margin-top: 1%;
+  margin-top: 1rem;
   font-weight: normal;
 }
 
 .plan {
   font-size: 2.6rem;
-  margin-top: 4%;
+  margin-top: 4rem;
 }
 
 .plan span {
@@ -180,7 +180,7 @@ body {
 }
 
 .mouse {
-  margin: 5% 0 1%;
+  margin: 8rem 0 1rem;
 }
 
 .mouse span {
