@@ -1,0 +1,510 @@
+body,
+div,
+p,
+img,
+input,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.colorWhite {
+  color: #fff;
+}
+.bgWhite{
+  background: #fff;
+}
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+body {
+  background: #eceff4;
+  font-family: 'Source Han Sans CN';
+  overflow-x: hidden;
+}
+
+
+/*返回顶部*/
+
+.reTop {
+  position: fixed;
+  right: 2rem;
+  top: 85%;
+  background: #FB6753;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  z-index: 20000;
+  display: none;
+}
+
+
+/*header*/
+
+.header {
+  height: 6rem;
+  line-height: 6rem;
+  background: #eceff4;
+}
+
+.fixedTop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+}
+
+.menu a:link,
+.menu a:visited,
+.menu a:hover,
+.navList a:link,
+.navList a:visited,
+.navList a:hover {
+  color: #4c5566;
+  text-decoration: none;
+}
+
+.navList li {
+  font-size: 1.6rem;
+}
+
+
+/*下拉菜单*/
+
+.menu {
+  left: 0;
+  top: 5rem;
+  border-top: .1rem solid #E4E4E4;
+  z-index: 1000;
+  display: none;
+}
+
+.menu li {
+  height: 4rem;
+  line-height: 4rem;
+  text-indent: 2rem;
+  cursor: pointer;
+}
+.menu li:hover{
+  background: #E4E4E4;
+}
+
+.nav-toggle {
+  right: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar {
+  width: 2rem;
+  height: .2rem;
+  margin-top: .3rem;
+  background: #999;
+  border-radius: .1rem;
+}
+
+
+/*main*/
+.main{
+  padding-top: 6rem;
+}
+.partnerTitle,
+.servideTitle,
+.caseTitle,
+.flowTitle {
+  font-size: 3.6rem;
+  margin: 4.5rem 0;
+  color: #3c4e66;
+}
+
+
+/*背景图片*/
+
+.summary,
+.someMsg,
+.contact {
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+/*首页概要*/
+
+.summary {
+  background-image: url('imgs/beijing_01.png');
+}
+
+.slogan {
+  font-size: 6.4rem;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.coverScope {
+  font-size: 2rem;
+  display: block;
+  margin-top: 1%;
+  font-weight: normal;
+}
+
+.plan {
+  font-size: 2.6rem;
+  margin-top: 4%;
+}
+
+.plan span {
+  color: #ff9966;
+}
+
+.mouse {
+  margin: 5% 0 1%;
+}
+
+.mouse span {
+  margin-top: .5rem;
+}
+
+
+/*服务内容*/
+
+.serviceContent {
+  padding: 0 5% 7rem;
+}
+
+.secondTitle {
+  color: #3d4d65;
+  font-size: 2.4rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.introduce {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: #54657e;
+  padding: 0 3rem;
+}
+
+
+/*一些动态*/
+
+.someMsg {
+  padding-bottom: 3rem;
+  background-image: url('imgs/beijing_02.png');
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;*/
+}
+
+.someMsg .col-sm-4 {
+  padding-right: 0;
+}
+
+.inner {
+  padding-left: 5rem;
+}
+
+.msgTitle {
+  font-size: 3.6rem;
+  margin: 8% 0 4%;
+}
+
+.msgTitle {
+}
+
+
+/*经典案例*/
+
+.case {
+  padding-bottom: 2rem;
+}
+
+.caseList {
+  padding: 0 5%;
+}
+
+.caseList>div {
+  margin-bottom: 1.5rem;
+}
+
+.caseName {
+  left: 3rem;
+  bottom: .8rem;
+  font-size: 1.8rem;
+}
+
+.device {
+  right: 3rem;
+  top: 2rem;
+  font-size: 1.2rem;
+  border-radius: .3rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.mac {
+  background: #9FBD2D;
+}
+
+.android {
+  background: #FD9950;
+}
+
+.iOS {
+  background: #D0365E;
+}
+
+
+/*服务流程*/
+
+.serviceFlow {
+  padding: 0 5% 2rem;
+}
+
+.serviceFlow .row {
+  margin-bottom: 2rem;
+}
+
+.english {
+  color: #1a94bd;
+  font-size: 2.4rem;
+}
+
+.chinese {
+  color: #434f5d;
+  font-size: 2.2rem;
+}
+
+.stepIntroduce {
+  color: #434f5d;
+  font-size: 1.4rem;
+}
+
+.stepText {
+  text-align: left;
+  float: left;
+  width: 70%;
+}
+
+.stepImg {
+  float: left;
+  width: 30%;
+}
+
+
+/*合作伙伴*/
+
+.partnerList {
+  padding: 0 5%;
+  margin-bottom: 7rem;
+}
+
+.partnerName {
+  color: #46566d;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+
+/*联系我们*/
+
+.contact {
+  background-image: url('imgs/beijing_03.png');
+}
+
+.contact p {
+  font-size: 3.6rem;
+  margin-top: 3.1rem;
+}
+
+.contactWays {
+  color: #96a0ac;
+  margin: 0 0 2.2rem; 
+  font-size: 1.8rem;
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.input-group .input-group-addon {
+}
+
+.input-group .input-group-addon,
+.input-group .form-control {
+  height: 3.5rem;
+  border: none;
+}
+
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea.need {
+  font-size: 1.4rem;
+  height: 6rem;
+  padding: 1.5rem;
+  resize: none;
+  border-radius: .5rem;
+  border: none;
+  color: #96a0ac;
+  margin-top: 2rem;
+}
+
+button.btn:hover {
+  color: #fff;
+}
+
+button.submit {
+  background: #00be5e;
+  font-size: 1.6rem;
+  width: 40%;
+  border: none;
+  border-radius: .3rem;
+  margin: 1.5rem 0 3rem;
+  padding: 1rem 0;
+}
+
+
+/*footer*/
+
+.footer {
+  background: #3d4d66;
+}
+
+.footer ul {
+  margin: 1.6rem 0 6rem;
+  padding: 0 20%;
+}
+
+.footer li {
+  float: left;
+  width: 14.285%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.right {
+  border-top: .1rem solid #56667f;
+  color: #73839c;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 769px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 5rem;
+    line-height: 5rem;
+  }
+  .serviceContent .col-xs-6 {
+    margin-bottom: 2rem;
+  }
+  .serviceFlow .col-xs-12 {
+    margin-bottom: 2rem;
+  }
+  .serviceFlow {
+    padding-bottom: 1rem;
+  }
+  .form .col-xs-12 {
+    margin-bottom: .5rem;
+  }
+  .form {
+    width: 80%;
+  }
+  .partnerList {
+    margin-bottom: 4rem;
+  }
+  textarea.need {
+    margin-top: 0;
+  }
+  .footer ul {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+  .plan {
+    margin-top: 2.5%;
+  }
+  .partnerTitle,
+  .servideTitle,
+  .caseTitle,
+  .flowTitle {
+    margin: 2rem 0;
+  }
+  .serviceContent {
+    padding: 0 2% 2rem;
+  }
+  .introduce {
+    padding: 0;
+  }
+  .footer ul {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  html {
+    font-size: 5px;
+  }
+  .device {
+    right: 2rem;
+    top: 1rem;
+  }
+}
+
+@media screen and (max-width:410px) {
+  .slogan {
+    font-size: 4rem;
+  }
+  .footer ul {
+    display: none;
+  }
+}
