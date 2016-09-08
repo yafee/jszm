@@ -129,6 +129,7 @@ body {
 /*main*/
 .main{
   padding-top: 6rem;
+  overflow-x:hidden;
 }
 .partnerTitle,
 .servideTitle,
