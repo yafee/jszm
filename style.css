@@ -313,6 +313,7 @@ body {
 
 .stepImg {
   float: left;
+  padding:1rem;
   width: 30%;
 }
 
