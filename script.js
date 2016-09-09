@@ -2,16 +2,12 @@ $(function() {
   //导航跳转
   var navBarHg = $('.header').height(),
   hgArr = [];
-  console.log(navBarHg);
   $('.main>div[id]').each(function() {
     hgArr.push($(this).offset().top);
   });
-  console.log(hgArr)
   $('.navList li,.menu li').on('click', function() {
     var index = $(this).index();
-    console.log(index);
     $(window).scrollTop(hgArr[index] - navBarHg);
-    console.log(hgArr[index] - navBarHg);
     if (!$(this).hasClass('inline')) {
       $('.menu').slideToggle();
     }
