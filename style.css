@@ -17,9 +17,11 @@ li {
 .colorWhite {
   color: #fff;
 }
-.bgWhite{
+
+.bgWhite {
   background: #fff;
 }
+
 .inline {
   display: inline;
 }
@@ -37,40 +39,40 @@ li {
 }
 
 body {
-  background: #eceff4;
   font-family: 'Source Han Sans CN';
   overflow-x: hidden;
+  background: #eceff4;
 }
 
 
 /*返回顶部*/
 
 .reTop {
+  line-height: 3rem;
   position: fixed;
-  right: 2rem;
+  z-index: 20000;
   top: 85%;
-  background: #FB6753;
+  right: 2rem;
+  display: none;
   width: 3rem;
   height: 3rem;
-  line-height: 3rem;
-  z-index: 20000;
-  display: none;
+  background: #fb6753;
 }
 
 
 /*header*/
 
 .header {
-  height: 6rem;
   line-height: 6rem;
+  height: 6rem;
   background: #eceff4;
 }
 
 .fixedTop {
   position: fixed;
-  left: 0;
-  top: 0;
   z-index: 10000;
+  top: 0;
+  left: 0;
 }
 
 .menu a:link,
@@ -79,8 +81,8 @@ body {
 .navList a:link,
 .navList a:visited,
 .navList a:hover {
-  color: #4c5566;
   text-decoration: none;
+  color: #4c5566;
 }
 
 .navList li {
@@ -91,26 +93,27 @@ body {
 /*下拉菜单*/
 
 .menu {
-  left: 0;
-  top: 5rem;
-  border-top: .1rem solid #E4E4E4;
   z-index: 1000;
+  top: 5rem;
+  left: 0;
   display: none;
+  border-top: .1rem solid #e4e4e4;
 }
 
 .menu li {
-  height: 4rem;
   line-height: 4rem;
-  text-indent: 2rem;
+  height: 4rem;
   cursor: pointer;
+  text-indent: 2rem;
 }
-.menu li:hover{
-  background: #E4E4E4;
+
+.menu li:hover {
+  background: #e4e4e4;
 }
 
 .nav-toggle {
-  right: 2rem;
   top: 50%;
+  right: 2rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
@@ -121,16 +124,18 @@ body {
   width: 2rem;
   height: .2rem;
   margin-top: .3rem;
-  background: #999;
   border-radius: .1rem;
+  background: #999;
 }
 
 
 /*main*/
-.main{
+
+.main {
+  overflow-x: hidden;
   padding-top: 6rem;
-  overflow-x:hidden;
 }
+
 .partnerTitle,
 .servideTitle,
 .caseTitle,
@@ -146,9 +151,9 @@ body {
 .summary,
 .someMsg,
 .contact {
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 
@@ -166,9 +171,9 @@ body {
 
 .coverScope {
   font-size: 2rem;
+  font-weight: normal;
   display: block;
   margin-top: 1rem;
-  font-weight: normal;
 }
 
 .plan {
@@ -177,7 +182,7 @@ body {
 }
 
 .plan span {
-  color: #ff9966;
+  color: #f96;
 }
 
 .mouse {
@@ -196,16 +201,16 @@ body {
 }
 
 .secondTitle {
-  color: #3d4d65;
   font-size: 2.4rem;
   margin: 1.5rem 0 1rem;
+  color: #3d4d65;
 }
 
 .introduce {
   font-size: 1.4rem;
   font-weight: lighter;
-  color: #54657e;
   padding: 0 3rem;
+  color: #54657e;
 }
 
 
@@ -214,9 +219,6 @@ body {
 .someMsg {
   padding-bottom: 3rem;
   background-image: url('imgs/beijing_02.png');
-  /*background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;*/
 }
 
 .someMsg .col-sm-4 {
@@ -232,9 +234,6 @@ body {
   margin: 8% 0 4%;
 }
 
-.msgTitle {
-}
-
 
 /*经典案例*/
 
@@ -246,37 +245,37 @@ body {
   padding: 0 5%;
 }
 
-.caseList>div {
+.caseList > div {
   margin-bottom: 1.5rem;
 }
 
 .caseName {
-  left: 3rem;
-  bottom: .8rem;
   font-size: 1.8rem;
+  bottom: .8rem;
+  left: 3rem;
 }
 
 .device {
-  right: 3rem;
-  top: 2rem;
   font-size: 1.2rem;
-  border-radius: .3rem;
-  height: 2.5rem;
   line-height: 2.5rem;
-  padding-left: .5rem;
+  top: 2rem;
+  right: 3rem;
+  height: 2.5rem;
   padding-right: .5rem;
+  padding-left: .5rem;
+  border-radius: .3rem;
 }
 
 .mac {
-  background: #9FBD2D;
+  background: #9fbd2d;
 }
 
 .android {
-  background: #FD9950;
+  background: #fd9950;
 }
 
 .iOS {
-  background: #D0365E;
+  background: #d0365e;
 }
 
 
@@ -291,57 +290,61 @@ body {
 }
 
 .english {
-  color: #1a94bd;
   font-size: 2.4rem;
+  color: #1a94bd;
 }
 
 .chinese {
-  color: #434f5d;
   font-size: 2.2rem;
+  color: #434f5d;
 }
 
 .stepIntroduce {
-  color: #434f5d;
   font-size: 1.4rem;
+  color: #434f5d;
 }
 
 .stepText {
-  text-align: left;
   float: left;
   width: 70%;
+  text-align: left;
 }
 
 .stepImg {
   float: left;
   width: 30%;
 }
-.stepImg:nth-of-type(even){
-  padding-left: 1rem;
+
+.stepImg:nth-of-type(even) {
   padding-right: .5rem;
+  padding-left: 1rem;
 }
-.stepImg:nth-of-type(odd){
+
+.stepImg:nth-of-type(odd) {
   padding-right: 1rem;
   padding-left: .5rem;
 }
 
-.serviceFlow .col-sm-6:nth-of-type(even){
+.serviceFlow .col-sm-6:nth-of-type(even) {
   padding-left: 0;
-} 
-.serviceFlow .col-sm-6:nth-of-type(odd){
+}
+
+.serviceFlow .col-sm-6:nth-of-type(odd) {
   padding-right: 0;
-} 
+}
+
 
 /*合作伙伴*/
 
 .partnerList {
-  padding: 0 5%;
   margin-bottom: 7rem;
+  padding: 0 5%;
 }
 
 .partnerName {
-  color: #46566d;
   font-size: 1.8rem;
   margin: 1rem 0;
+  color: #46566d;
 }
 
 
@@ -357,17 +360,14 @@ body {
 }
 
 .contactWays {
-  color: #96a0ac;
-  margin: 0 0 2.2rem; 
   font-size: 1.8rem;
+  margin: 0 0 2.2rem;
+  color: #96a0ac;
 }
 
 .form {
   width: 50%;
   margin: 0 auto;
-}
-
-.input-group .input-group-addon {
 }
 
 .input-group .input-group-addon,
@@ -384,12 +384,12 @@ textarea:focus {
 textarea.need {
   font-size: 1.4rem;
   height: 6rem;
+  margin-top: 2rem;
   padding: 1.5rem;
   resize: none;
-  border-radius: .5rem;
-  border: none;
   color: #96a0ac;
-  margin-top: 2rem;
+  border: none;
+  border-radius: .5rem;
 }
 
 button.btn:hover {
@@ -397,13 +397,13 @@ button.btn:hover {
 }
 
 button.submit {
-  background: #00be5e;
   font-size: 1.6rem;
   width: 40%;
-  border: none;
-  border-radius: .3rem;
   margin: 1.5rem 0 3rem;
   padding: 1rem 0;
+  border: none;
+  border-radius: .3rem;
+  background: #00be5e;
 }
 
 
@@ -419,23 +419,29 @@ button.submit {
 }
 
 .footer li {
+  line-height: 4rem;
   float: left;
   width: 14.285%;
   height: 4rem;
-  line-height: 4rem;
   text-align: center;
 }
 
+.footer a:link,
+.footer a:visited,
+.footer a:hover {
+  color: #fff;
+}
+
 .footer a {
-  text-decoration: none;
   font-size: 1.6rem;
+  text-decoration: none;
 }
 
 .right {
-  border-top: .1rem solid #56667f;
-  color: #73839c;
-  padding: 1rem 0;
   font-size: 1.4rem;
+  padding: 1rem 0;
+  color: #73839c;
+  border-top: .1rem solid #56667f;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 769px) {
@@ -452,8 +458,8 @@ button.submit {
 
 @media screen and (max-width: 768px) {
   .header {
-    height: 5rem;
     line-height: 5rem;
+    height: 5rem;
   }
   .serviceContent .col-xs-6 {
     margin-bottom: 2rem;
@@ -510,8 +516,8 @@ button.submit {
     font-size: 5px;
   }
   .device {
-    right: 2rem;
     top: 1rem;
+    right: 2rem;
   }
 }
 

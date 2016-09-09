@@ -1,4 +1,18 @@
 $(function() {
+  //导航跳转
+  var navBarHg = $('.header').height(),
+  hgArr = [];
+  $('.main>div[id]').each(function() {
+    hgArr.push($(this).offset().top);
+  });
+  $('.navList li,.menu li').on('click', function() {
+    var index = $(this).index();
+    $(window).scrollTop(hgArr[index] - navBarHg);
+    if (!$(this).hasClass('inline')) {
+      $('.menu').slideToggle();
+    }
+  });
+  //返回顶部
   $(window).on('scroll', function() {
     var scrollTop = $(window).scrollTop();
     if (scrollTop > 0) {
@@ -12,11 +26,7 @@ $(function() {
       scrollTop: 0
     }, 500);
   });
-  var navList = $('.menu li');
   $('.nav-toggle').on('click', function() {
-    $('.menu').slideToggle();
-  });
-  navList.on('click', function() {
     $('.menu').slideToggle();
   });
   stepImgVC();
@@ -25,6 +35,5 @@ $(function() {
   function stepImgVC() {
     var stepImgHg = $('.stepImg').parent().css('height');
     $('.stepImg').css('line-height', stepImgHg);
-    console.log(stepImgHg);
   }
 });
