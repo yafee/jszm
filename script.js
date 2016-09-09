@@ -7,7 +7,9 @@ $(function() {
   });
   $('.navList li,.menu li').on('click', function() {
     var index = $(this).index();
+    console.log(index);
     $(window).scrollTop(hgArr[index] - navBarHg);
+    console.log(hgArr[index] - navBarHg);
     if (!$(this).hasClass('inline')) {
       $('.menu').slideToggle();
     }
