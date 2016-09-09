@@ -217,21 +217,13 @@ body {
 /*一些动态*/
 
 .someMsg {
-  padding-bottom: 3rem;
+  padding:0 1rem 3rem;
   background-image: url('imgs/beijing_02.png');
-}
-
-.someMsg .col-sm-4 {
-  padding-right: 0;
-}
-
-.inner {
-  padding-left: 5rem;
 }
 
 .msgTitle {
   font-size: 3.6rem;
-  margin: 8% 0 4%;
+  margin: 4.3rem 0 2.3rem;
 }
 
 
@@ -469,6 +461,9 @@ button.submit {
   }
   .serviceFlow {
     padding-bottom: 1rem;
+  }
+  .someMsg .inner{
+    text-align: center;
   }
   .form .col-xs-12 {
     margin-bottom: .5rem;
