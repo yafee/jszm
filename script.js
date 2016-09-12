@@ -7,7 +7,8 @@ $(function() {
   });
   $('.navList li,.menu li').on('click', function() {
     var index = $(this).index();
-    $(window).scrollTop(hgArr[index] - navBarHg);
+    // $(window).scrollTop(hgArr[index] - navBarHg);
+    $(window).animate({scrollTop:hgArr[index] - navBarHg}, 1000);
     if (!$(this).hasClass('inline')) {
       $('.menu').slideToggle();
     }

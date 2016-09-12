@@ -453,6 +453,9 @@ button.submit {
     line-height: 5rem;
     height: 5rem;
   }
+  .main{
+    padding-top: 5rem;
+  }
   .serviceContent .col-xs-6 {
     margin-bottom: 2rem;
   }
