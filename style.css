@@ -39,7 +39,7 @@ li {
 }
 
 body {
-  font-family: 'Source Han Sans CN';
+  font-family: "Microsoft YaHei", "SimHei", "Verdana", "Arial", "sans-serif";
   overflow-x: hidden;
   background: #eceff4;
 }
@@ -48,14 +48,14 @@ body {
 /*返回顶部*/
 
 .reTop {
-  line-height: 3rem;
+  line-height: 30px;
   position: fixed;
   z-index: 20000;
   top: 85%;
-  right: 2rem;
+  right: 20px;
   display: none;
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 30px;
   background: #fb6753;
 }
 
@@ -63,8 +63,11 @@ body {
 /*header*/
 
 .header {
-  line-height: 6rem;
-  height: 6rem;
+  line-height: 70px;
+  height: 70px;
+}
+
+.header .row {
   background: #eceff4;
 }
 
@@ -93,18 +96,18 @@ body {
 /*下拉菜单*/
 
 .menu {
-  z-index: 1000;
-  top: 5rem;
+  z-index: 2000;
+  top: 60px;
   left: 0;
   display: none;
   border-top: .1rem solid #e4e4e4;
 }
 
 .menu li {
-  line-height: 4rem;
-  height: 4rem;
+  line-height: 40px;
+  height: 40px;
   cursor: pointer;
-  text-indent: 2rem;
+  text-indent: 20px;
 }
 
 .menu li:hover {
@@ -113,7 +116,8 @@ body {
 
 .nav-toggle {
   top: 50%;
-  right: 2rem;
+  right: 20px;
+  width: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
@@ -121,10 +125,10 @@ body {
 }
 
 .icon-bar {
-  width: 2rem;
-  height: .2rem;
-  margin-top: .3rem;
-  border-radius: .1rem;
+  width: 100%;
+  height: 2px;
+  margin-top: 3px;
+  border-radius: 1px;
   background: #999;
 }
 
@@ -133,7 +137,7 @@ body {
 
 .main {
   overflow-x: hidden;
-  padding-top: 6rem;
+  padding-top: 60px;
 }
 
 .partnerTitle,
@@ -217,7 +221,7 @@ body {
 /*一些动态*/
 
 .someMsg {
-  padding:0 1rem 3rem;
+  padding: 0 1rem 3rem;
   background-image: url('imgs/beijing_02.png');
 }
 
@@ -234,17 +238,17 @@ body {
 }
 
 .caseList {
-  padding: 0 5%;
+  margin: 0 30px;
 }
 
 .caseList > div {
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .caseName {
   font-size: 1.8rem;
-  bottom: .8rem;
-  left: 3rem;
+  bottom: 8px;
+  left: 30px;
 }
 
 .device {
@@ -364,7 +368,7 @@ body {
 
 .input-group .input-group-addon,
 .input-group .form-control {
-  height: 3.5rem;
+  height: 35px;
   border: none;
 }
 
@@ -374,10 +378,10 @@ textarea:focus {
 }
 
 textarea.need {
-  font-size: 1.4rem;
-  height: 6rem;
+  font-size: 14px;
+  height: 60px;
   margin-top: 2rem;
-  padding: 1.5rem;
+  padding: 15px;
   resize: none;
   color: #96a0ac;
   border: none;
@@ -389,12 +393,12 @@ button.btn:hover {
 }
 
 button.submit {
-  font-size: 1.6rem;
+  font-size: 14px;
   width: 40%;
-  margin: 1.5rem 0 3rem;
-  padding: 1rem 0;
+  margin: 15px 0 30px;
+  padding: 10px 0;
   border: none;
-  border-radius: .3rem;
+  border-radius: 3px;
   background: #00be5e;
 }
 
@@ -436,7 +440,13 @@ button.submit {
   border-top: .1rem solid #56667f;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 769px) {
+@media screen and (max-width: 992px) {
+  .someMsg .inner {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
   html {
     font-size: 9px;
   }
@@ -449,33 +459,39 @@ button.submit {
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    line-height: 5rem;
-    height: 5rem;
+  html {
+    font-size: 6px;
   }
-  .main{
-    padding-top: 5rem;
+  .header {
+    line-height: 60px;
+    height: 60px;
+  }
+  .main {
+    padding-top: 60px;
   }
   .serviceContent .col-xs-6 {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
   }
   .serviceFlow .col-xs-12 {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
   }
   .serviceFlow {
-    padding-bottom: 1rem;
+    padding-bottom: 10px;
   }
-  .someMsg .inner{
+  .someMsg .inner {
     text-align: center;
   }
+  .caseList {
+    margin: 0 15px;
+  }
   .form .col-xs-12 {
-    margin-bottom: .5rem;
+    margin-bottom: 5px;
   }
   .form {
     width: 80%;
   }
   .partnerList {
-    margin-bottom: 4rem;
+    margin-bottom: 40px;
   }
   textarea.need {
     margin-top: 0;
@@ -487,7 +503,7 @@ button.submit {
 
 @media screen and (max-width: 600px) {
   html {
-    font-size: 6px;
+    /*font-size: 6px;*/
   }
   .plan {
     margin-top: 2.5%;
@@ -496,32 +512,32 @@ button.submit {
   .servideTitle,
   .caseTitle,
   .flowTitle {
-    margin: 2rem 0;
+    margin: 20px 0;
   }
   .serviceContent {
-    padding: 0 2% 2rem;
+    padding: 0 2% 20px;
   }
   .introduce {
     padding: 0;
   }
   .footer ul {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width:500px) {
-  html {
-    font-size: 5px;
+  .slogan {
+    font-size: 4rem;
   }
   .device {
-    top: 1rem;
-    right: 2rem;
+    top: 10px;
+    right: 20px;
   }
 }
 
 @media screen and (max-width:410px) {
   .slogan {
-    font-size: 4rem;
+    /*font-size: 4rem;*/
   }
   .footer ul {
     display: none;

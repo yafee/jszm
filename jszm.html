@@ -18,13 +18,13 @@
     <![endif]-->
 </head>
 
-<body class="fullWidth">
+<body class="fullWidth relative">
   <div class="reTop text-center colorWhite">
-    <span class="glyphicon glyphicon-arrow-up"></span>
+    <span class="glyphicon glyphicon-arrow-up inline"></span>
   </div>
-  <div class="header fullWidth relative fixedTop">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 hidden-sm col-xs-6 text-center">
+  <div class="header fullWidth fixedTop">
+    <div class="row relative">
+      <div class="col-lg-4 col-md-4 hidden-sm col-xs-6" style="padding-left: 20px;">
         <img src="imgs/logo.png" class="img-responsive logo inline" alt="logo">
       </div>
       <div class="col-lg-8 col-md-8 col-sm-12 hidden-xs">
@@ -32,11 +32,19 @@
           <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">首页</a></li>
           <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">服务内容</a></li>
           <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">经典案例</a></li>
-          <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">服务流程</a></li>   
+          <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">服务流程</a></li>
           <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">合作伙伴</a></li>
           <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">联系我们</a></li>
         </ul>
       </div>
+    </div>
+    <!-- 下拉菜单按钮 -->
+    <div class="nav-toggle absolute visible-xs">
+      <ul>
+        <li class="icon-bar"></li>
+        <li class="icon-bar"></li>
+        <li class="icon-bar"></li>
+      </ul>
     </div>
     <div class="absolute fullWidth menu bgWhite">
       <ul>
@@ -48,16 +56,9 @@
         <li><a href="javascript:;" class="fullWidth inline-block">联系我们</a></li>
       </ul>
     </div>
-    <!-- 下拉菜单按钮 -->
-    <div class="nav-toggle absolute visible-xs">
-      <ul>
-        <li class="icon-bar"></li>
-        <li class="icon-bar"></li>
-        <li class="icon-bar"></li>
-      </ul>
-    </div>
   </div>
   <div class="main fullWidth" id="main">
+    <!-- 首页 -->
     <div class="summary text-center colorWhite relative fullWidth" id="summary">
       <span class="slogan inline-block">互联网＋转型IT解决方案专家</span>
       <span class="coverScope inline-block">传统企业转型&nbsp;&nbsp;&nbsp;&nbsp;找咨询／找规划／找设计／找开发</span>
@@ -68,10 +69,11 @@
         <span class="inline-block">Scroll Down</span>
       </div>
     </div>
+    <!-- 服务内容 -->
     <div class="serviceContent text-center fullWidth" id="serviceContent">
       <span class="servideTitle inline-block">服务内容</span>
-      <div class="row text-center">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <div class="row text-center hidden-xs">
+        <div class="col-lg-3 col-md-3 col-sm-3">
           <img src="imgs/android.png" class="img-responsive inline" alt="安卓">
           <br>
           <span class="secondTitle inline-block">ANDROID/IOS APP开发</span>
@@ -79,7 +81,7 @@
             根据客户的需求提供高品质的安卓APP开发解决方案，苹果APP开发，核心技术团队曾任职于腾讯、阿里巴巴、金蝶名企实力说话。
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-3">
           <img src="imgs/dingxiang.png" class="img-responsive inline" alt="安卓">
           <br>
           <span class="secondTitle inline-block">个性化精准定向营销</span>
@@ -87,7 +89,7 @@
             多渠道获取会员数据，销售数据打造，基于数据最全的大会员体系，深度挖掘消费者行为，全面分析和掌握消费者动向，精准定向营销
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-3">
           <img src="imgs/weixin.png" class="img-responsive inline" alt="安卓">
           <br>
           <span class="secondTitle inline-block">微信功能应用拓展开发</span>
@@ -95,7 +97,43 @@
             提供微信定制化开发服务，包括微信自定义菜单，营销互动创意设计等。
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+          <img src="imgs/dingzhi.png" class="img-responsive inline" alt="安卓">
+          <br>
+          <span class="secondTitle inline-block">定制化网站设计开发</span>
+          <div class="introduce">
+            不论是企业类，电商类或者是社区类的网站都能满足不同客户的需求。
+          </div>
+        </div>
+      </div>
+      <div class="row text-center visible-xs">
+        <div class="col-xs-6">
+          <img src="imgs/android.png" class="img-responsive inline" alt="安卓">
+          <br>
+          <span class="secondTitle inline-block">ANDROID/IOS APP开发</span>
+          <div class="introduce">
+            根据客户的需求提供高品质的安卓APP开发解决方案，苹果APP开发，核心技术团队曾任职于腾讯、阿里巴巴、金蝶名企实力说话。
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <img src="imgs/dingxiang.png" class="img-responsive inline" alt="安卓">
+          <br>
+          <span class="secondTitle inline-block">个性化精准定向营销</span>
+          <div class="introduce">
+            多渠道获取会员数据，销售数据打造，基于数据最全的大会员体系，深度挖掘消费者行为，全面分析和掌握消费者动向，精准定向营销
+          </div>
+        </div>
+      </div>
+      <div class="row text-center visible-xs">
+        <div class="col-xs-6">
+          <img src="imgs/weixin.png" class="img-responsive inline" alt="安卓">
+          <br>
+          <span class="secondTitle inline-block">微信功能应用拓展开发</span>
+          <div class="introduce">
+            提供微信定制化开发服务，包括微信自定义菜单，营销互动创意设计等。
+          </div>
+        </div>
+        <div class="col-xs-6">
           <img src="imgs/dingzhi.png" class="img-responsive inline" alt="安卓">
           <br>
           <span class="secondTitle inline-block">定制化网站设计开发</span>
@@ -107,7 +145,7 @@
     </div>
     <div class="someMsg colorWhite relative fullWidth">
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center" style="padding-right:0;">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" style="padding-right:0;">
           <div class="inner inline-block text-left">
             <span class="msgTitle inline-block colorWhite">
             <img src="imgs/jingdiananli.png" class="img-responsive inline" alt="经典案例">
@@ -121,7 +159,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center" style="padding:0;">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" style="padding:0;">
           <div class="inner inline-block text-left">
             <span class="msgTitle inline-block colorWhite">
             <img src="imgs/zhaomidongtai.png" class="img-responsive inline" alt="兆米动态">
@@ -135,7 +173,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center" style="padding-left:0;">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" style="padding-left:0;">
           <div class="inner inline-block text-left">
             <span class="msgTitle inline-block colorWhite">
             <img src="imgs/yejiexinwen-.png" class="img-responsive inline" alt="业界新闻">
@@ -151,6 +189,7 @@
         </div>
       </div>
     </div>
+    <!-- 经典案例 -->
     <div class="case text-center" id="case">
       <span class="caseTitle inline-block">经典案例</span>
       <div class="row caseList">
@@ -198,6 +237,7 @@
         </div>
       </div>
     </div>
+    <!-- 服务流程 -->
     <div class="serviceFlow text-center bgWhite" id="serviceFlow">
       <span class="flowTitle inline-block">服务流程</span>
       <div class="row">
@@ -261,6 +301,7 @@
         </div>
       </div>
     </div>
+    <!-- 合作伙伴 -->
     <div class="partner text-center" id="partner">
       <span class="partnerTitle inline-block">合作伙伴</span>
       <div class="row partnerList">
@@ -296,10 +337,11 @@
         </div>
       </div>
     </div>
+    <!-- 联系我们 -->
     <div class="contact text-center relative fullWidth" id="contact">
       <p class="colorWhite"><span>花一分钟提交</span>&nbsp;<span style="color:#00be5e;">您的需求</span></p>
       <span class="contactWays inline-block">
-        邮箱:Js@zhaomi.com.cn|电话:13124567481
+        邮箱:market@jszhaomi.com.cn|电话:025-52375905
       </span>
       <div class="form">
         <div class="row">
@@ -326,17 +368,18 @@
         <button class="submit colorWhite">立即提交</button>
       </div>
     </div>
+    <!-- footer -->
     <div class="footer fullWidth">
       <ul class="inline-block fullWidth">
-        <li><a href="javascript:;" class="colorWhite">首页</a></li>
-        <li><a href="javascript:;" class="colorWhite">服务内容</a></li>
-        <li><a href="javascript:;" class="colorWhite">经典案例</a></li>
+        <li class="link inline"><a href="javascript:;" class="colorWhite">首页</a></li>
+        <li class="link inline"><a href="javascript:;" class="colorWhite">服务内容</a></li>
+        <li class="link inline"><a href="javascript:;" class="colorWhite">经典案例</a></li>
         <li>
           <a href="javascript:;"><img src="imgs/logo_02.png" alt=""></a>
         </li>
-        <li><a href="javascript:;" class="colorWhite">服务流程</a></li>
-        <li><a href="javascript:;" class="colorWhite">合作伙伴</a></li>
-        <li><a href="javascript:;" class="colorWhite">关于我们</a></li>
+        <li class="link inline"><a href="javascript:;" class="colorWhite">服务流程</a></li>
+        <li class="link inline"><a href="javascript:;" class="colorWhite">合作伙伴</a></li>
+        <li class="link inline"><a href="javascript:;" class="colorWhite">联系我们</a></li>
       </ul>
       <div class="right text-center fullWidth">
         &copy;Jszhaomi,2016.All Right Reserved.
@@ -345,8 +388,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="dist/js/jquery-3.1.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="script.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
