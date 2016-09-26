@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="移动互联网,+互联网,移动App,解决方案,微信开发,技术服务,外包,娱乐,教育,传媒,游戏,HTML5开发,IOS开发,Android开发">
   <title>江苏兆米</title>
   <!-- Bootstrap s-->
   <link href="dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="toastr.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="imgs/logo_02.png">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,7 +20,7 @@
     <![endif]-->
 </head>
 
-<body class="fullWidth relative">
+<body class="fullWidth relative" id="font">
   <div class="reTop text-center colorWhite">
     <span class="glyphicon glyphicon-arrow-up inline"></span>
   </div>
@@ -341,7 +343,7 @@
     <div class="contact text-center relative fullWidth" id="contact">
       <p class="colorWhite"><span>花一分钟提交</span>&nbsp;<span style="color:#00be5e;">您的需求</span></p>
       <span class="contactWays inline-block">
-        邮箱:market@jszhaomi.com.cn|电话:025-52375905
+        邮箱:market@jszhaomi.com|电话:025-52375905
       </span>
       <div class="form">
         <div class="row">
@@ -350,7 +352,7 @@
               <div class="input-group-addon bgWhite">
                 <img src="imgs/user-icon.png" alt="user">
               </div>
-              <input class="form-control" type="text" placeholder="姓名：">
+              <input class="form-control" type="text" id="name" placeholder="姓名：">
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -358,11 +360,11 @@
               <div class="input-group-addon bgWhite">
                 <img src="imgs/dianhua-.png" alt="tel">
               </div>
-              <input class="form-control" type="text" placeholder="电话：">
+              <input class="form-control" type="text" id="tel" placeholder="电话：">
             </div>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <textarea class="need fullWidth">您的需求...</textarea>
+            <textarea class="need fullWidth" id="need" placeholder="您的需求..."></textarea>
           </div>
         </div>
         <button class="submit colorWhite">立即提交</button>
@@ -385,10 +387,16 @@
         &copy;Jszhaomi,2016.All Right Reserved.
       </div>
     </div>
+    <script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="dist/js/jquery-3.1.0.min.js"></script>
+    <script src="toastr.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="script.js"></script>
+    <script type="text/javascript">
+    $youziku.load("#font", "276f2bf4b8ce40a2ac554e10ed2748e1", "Source-Han-Normal");
+    $youziku.draw();
+    </script>
 </body>
 
 </html>
