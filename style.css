@@ -252,18 +252,18 @@ body {
   left: 30px;
 }
 
-.device {
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  top: 2rem;
-  right: 3rem;
-  height: 2.5rem;
-  padding-right: .5rem;
-  padding-left: .5rem;
-  border-radius: .3rem;
+.device{
+  top: 1%;
+  right: 2rem;
 }
-
-.mac {
+.device button{
+  display: block;
+  border-radius: .3rem;
+  border:none;
+  margin:.3rem auto;
+  padding:.3rem .8rem;
+}
+.web {
   background: #9fbd2d;
 }
 
@@ -273,6 +273,10 @@ body {
 
 .iOS {
   background: #d0365e;
+}
+
+.H5 {
+  background: #a10;
 }
 
 
@@ -503,9 +507,6 @@ button.submit {
 }
 
 @media screen and (max-width: 600px) {
-  html {
-    /*font-size: 6px;*/
-  }
   .plan {
     margin-top: 2.5%;
   }
@@ -530,17 +531,16 @@ button.submit {
   .slogan {
     font-size: 4rem;
   }
-  .device {
-    top: 10px;
-    right: 20px;
+  .device button{
+    padding: 0 .3rem;
   }
 }
 
 @media screen and (max-width:410px) {
-  .slogan {
-    /*font-size: 4rem;*/
-  }
   .footer ul {
     display: none;
+  }
+  .device button{
+    font-size: .5rem;
   }
 }
