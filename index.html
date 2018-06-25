@@ -1,0 +1,441 @@
+<!--
+@Author: yafee
+@Date:   2016-10-21T11:00:02+08:00
+@Filename: jszm.html
+@Last modified by:   yafee
+@Last modified time: 2017-01-10T20:34:22+08:00
+-->
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="keywords" content="移动互联网 互联网+ 移动App 解决方案 微信开发 技术服务 外包 娱乐 教育 传媒 游戏 HTML5开发 IOS开发 Android开发 江苏兆米 兆米 zhaomi">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>江苏兆米</title>
+    <!-- Bootstrap s-->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="build/toastr.css">
+    <link rel="stylesheet" href="build/style.min.css">
+    <link rel="icon" type="image/png" href="imgs/logo_02.png">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="fullWidth relative" id="font">
+    <div class="reTop text-center colorWhite">
+      <span class="glyphicon glyphicon-arrow-up inline"></span>
+    </div>
+    <div class="header fullWidth fixedTop">
+      <div class="row relative">
+        <div class="col-lg-4 col-md-4 hidden-sm col-xs-6" style="padding-left: 20px;">
+          <img src="imgs/logo.png" class="img-responsive logo inline" alt="logo">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 hidden-xs">
+          <ul class="navList text-center row">
+            <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">首页</a></li>
+            <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">服务内容</a></li>
+            <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">经典案例</a></li>
+            <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">服务流程</a></li>
+            <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">合作伙伴</a></li>
+            <li class="inline col-lg-2 col-md-2 col-sm-2"><a href="javascript:;" class="fullWidth inline-block">联系我们</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 下拉菜单按钮 -->
+      <div class="nav-toggle absolute visible-xs">
+        <ul>
+          <li class="icon-bar"></li>
+          <li class="icon-bar"></li>
+          <li class="icon-bar"></li>
+        </ul>
+      </div>
+      <div class="absolute fullWidth menu bgWhite">
+        <ul>
+          <li><a href="javascript:;" class="fullWidth inline-block">首页</a></li>
+          <li><a href="javascript:;" class="fullWidth inline-block">服务内容</a></li>
+          <li><a href="javascript:;" class="fullWidth inline-block">经典案例</a></li>
+          <li><a href="javascript:;" class="fullWidth inline-block">服务流程</a></li>
+          <li><a href="javascript:;" class="fullWidth inline-block">合作伙伴</a></li>
+          <li><a href="javascript:;" class="fullWidth inline-block">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main fullWidth" id="main">
+      <!-- 首页 -->
+      <div class="summary text-center colorWhite relative fullWidth" id="summary">
+        <span class="slogan inline-block">互联网＋转型IT解决方案专家</span>
+        <span class="coverScope inline-block">传统企业转型&nbsp;&nbsp;&nbsp;&nbsp;找咨询／找规划／找设计／找开发</span>
+        <span class="plan inline-block">一体化互联网&nbsp;&nbsp;+&nbsp;&nbsp;<span>解决方案</span></span>
+        <div class="mouse text-center">
+          <img src="imgs/mouse-icon.png" class="img-responsive inline-block" alt="鼠标图片">
+          <br>
+          <span class="inline-block">Scroll Down</span>
+        </div>
+      </div>
+      <!-- 服务内容 -->
+      <div class="serviceContent text-center fullWidth" id="serviceContent">
+        <span class="servideTitle inline-block">服务内容</span>
+        <div class="row text-center hidden-xs">
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <img src="imgs/android.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">ANDROID/IOS APP开发</span>
+            <div class="introduce">
+              根据客户的需求提供高品质的安卓APP开发解决方案，苹果APP开发，核心技术团队曾任职于腾讯、阿里巴巴、金蝶名企实力说话。
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <img src="imgs/dingxiang.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">个性化精准定向营销</span>
+            <div class="introduce">
+              多渠道获取会员数据，销售数据打造，基于数据最全的大会员体系，深度挖掘消费者行为，全面分析和掌握消费者动向，精准定向营销
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <img src="imgs/weixin.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">微信功能应用拓展开发</span>
+            <div class="introduce">
+              提供微信定制化开发服务，包括微信自定义菜单，营销互动创意设计等。
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <img src="imgs/dingzhi.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">定制化网站设计开发</span>
+            <div class="introduce">
+              不论是企业类，电商类或者是社区类的网站都能满足不同客户的需求。
+            </div>
+          </div>
+        </div>
+        <div class="row text-center visible-xs">
+          <div class="col-xs-6">
+            <img src="imgs/android.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">ANDROID/IOS APP开发</span>
+            <div class="introduce">
+              根据客户的需求提供高品质的安卓APP开发解决方案，苹果APP开发，核心技术团队曾任职于腾讯、阿里巴巴、金蝶名企实力说话。
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <img src="imgs/dingxiang.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">个性化精准定向营销</span>
+            <div class="introduce">
+              多渠道获取会员数据，销售数据打造，基于数据最全的大会员体系，深度挖掘消费者行为，全面分析和掌握消费者动向，精准定向营销
+            </div>
+          </div>
+        </div>
+        <div class="row text-center visible-xs">
+          <div class="col-xs-6">
+            <img src="imgs/weixin.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">微信功能应用拓展开发</span>
+            <div class="introduce">
+              提供微信定制化开发服务，包括微信自定义菜单，营销互动创意设计等。
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <img src="imgs/dingzhi.png" class="img-responsive inline" alt="安卓">
+            <br>
+            <span class="secondTitle inline-block">定制化网站设计开发</span>
+            <div class="introduce">
+              不论是企业类，电商类或者是社区类的网站都能满足不同客户的需求。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="someMsg colorWhite relative fullWidth">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" style="padding-right:0;">
+            <div class="inner inline-block text-left">
+              <span class="msgTitle inline-block colorWhite">
+            <img src="imgs/jingdiananli.png" class="img-responsive inline" alt="经典案例">
+            &nbsp;经典案例
+          </span>
+              <ul class="inline">
+                <li>&nbsp;易果：链式反应获得精准新用户</li>
+                <li>【CFO】中海油：“四算合一”管好千亿投资</li>
+                <li>【CTO】高正电子：条码管理塑造竞争优势</li>
+                <li>【CMO】国旅集团：APP实现移动审批一体化</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" style="padding:0;">
+            <div class="inner inline-block text-left">
+              <span class="msgTitle inline-block colorWhite">
+            <img src="imgs/zhaomidongtai.png" class="img-responsive inline" alt="兆米动态">
+            &nbsp;兆米动态
+          </span>
+              <ul>
+                <li>企业互联网是下一个大事件，你认为呢</li>
+                <li>跟毛爷爷学习互联网思维</li>
+                <li>垂直行业转型的错误你了解吗</li>
+                <li>新思路——用零售思维做互联网</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" style="padding-left:0;">
+            <div class="inner inline-block text-left">
+              <span class="msgTitle inline-block colorWhite">
+            <img src="imgs/yejiexinwen-.png" class="img-responsive inline" alt="业界新闻">
+            &nbsp;业界新闻
+          </span>
+              <ul>
+                <li>为什么大多数传统企业做互联网转型失败？</li>
+                <li>传统企业电商的四大难关</li>
+                <li>那些广泛应用手机APP的传统行业</li>
+                <li>传统企业与人员如何转型互联网及做新媒体</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 经典案例 -->
+      <div class="case text-center" id="case">
+        <span class="caseTitle inline-block">经典案例</span>
+        <div class="row caseList">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/xiguachong.png" class="img-responsive caseImg fullWidth" alt="西瓜虫">
+            <span class="caseName absolute">西瓜虫</span>
+            <div class="device absolute text-center">
+              <button class="iOS">iOS</button>
+              <button class="android">android</button>
+              <button class="H5">H5</button>
+              <button class="web">web</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/shujuketang.png" class="img-responsive caseImg fullWidth" alt="数据课堂">
+            <span class="caseName absolute">数据课堂</span>
+            <div class="device absolute text-center">
+              <button class="iOS">iOS</button>
+              <button class="android">android</button>
+              <button class="H5">H5</button>
+              <button class="web">web</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/zhuanlidianshang.png" class="img-responsive caseImg fullWidth" alt="专利电商">
+            <span class="caseName absolute">专利电商</span>
+            <div class="device absolute text-center">
+              <button class="H5">H5</button>
+              <button class="web">web</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/shengxiano2o.png" class="img-responsive caseImg fullWidth" alt="生鲜o2o">
+            <span class="caseName absolute">生鲜o2o</span>
+            <div class="device absolute text-center">
+              <button class="iOS">iOS</button>
+              <button class="android">android</button>
+            </div>
+          </div>
+        </div>
+        <div class="row caseList">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/zhaoshangzhushou.png" class="img-responsive caseImg fullWidth" alt="招商助手">
+            <span class="caseName absolute">招商助手</span>
+            <div class="device absolute text-center">
+              <button class="iOS">iOS</button>
+              <button class="android">android</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/chezhibao.png" class="img-responsive caseImg fullWidth" alt="车置宝">
+            <span class="caseName absolute">车置宝</span>
+            <div class="device absolute text-center">
+              <button class="H5">H5</button>
+              <button class="web">web</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/zhishidaquan.png" class="img-responsive caseImg fullWidth" alt="知识大全">
+            <span class="caseName absolute">知识大全</span>
+            <div class="device absolute text-center">
+              <button class="iOS">iOS</button>
+              <button class="android">android</button>
+              <button class="web">web</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 relative colorWhite">
+            <img src="imgs/zhuanlidianshang.png" class="img-responsive caseImg fullWidth" alt="洽谈帮V">
+            <span class="caseName absolute">洽谈帮V</span>
+            <div class="device absolute text-center">
+              <button class="iOS">iOS</button>
+              <button class="android">android</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 服务流程 -->
+      <div class="serviceFlow text-center bgWhite" id="serviceFlow">
+        <span class="flowTitle inline-block">服务流程</span>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="stepText">
+              <p class="stepTitle">
+                <span class="english">Turn thinking</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="chinese">转思维&nbsp;1</span>
+              </p>
+              <span class="stepIntroduce">
+            传统企业互联网转型，首先是理念思维的转型。通过互联网思维和企业业务特色相结合，建立起涉河企业发展转型要求的互联网文化理念，帮助传统企业管理者突破固有思维禁锢，树立转型变革紧迫感，为转型推动进行铺垫；
+          </span>
+            </div>
+            <div class="stepImg text-center">
+              <img src="imgs/zhuansiwei1.png" class="img-responsive inline" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="stepImg text-center">
+              <img src="imgs/chuangmoshi2.png" class="img-responsive inline" alt="">
+            </div>
+            <div class="stepText">
+              <p class="stepTitle">
+                <span class="chinese">2&nbsp;创模式</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="english">Gen model</span>
+              </p>
+              <span class="stepIntroduce">
+            通过对企业现状能力／资源调研分析，行业趋势及产业链利益相关方价值发现，互联网技术驱动商业模式创新等领域的深入探讨，帮助企业明晰互联网转型定位与方向，对企业进行商业模式创新设计，为企业设计独特、高价值的发展之路。
+          </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="stepText">
+              <p class="stepTitle">
+                <span class="english">Change mechanism</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="chinese">改机制&nbsp;3</span>
+              </p>
+              <span class="stepIntroduce">
+            传统企业互联网转型，首先是理念思维的转型。通过互联网思维和企业业务特性相结合，建立起适合企业发展转型要求的互联网文化理念，帮助传统企业管理者突破固有思维禁锢，树立转型变革紧迫感，为转型推动进行铺垫；
+          </span>
+            </div>
+            <div class="stepImg text-center">
+              <img src="imgs/gaijizhi3.png" class="img-responsive inline" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="stepImg text-center">
+              <img src="imgs/jianpingtai4.png" class="img-responsive inline" alt="">
+            </div>
+            <div class="stepText">
+              <p class="stepTitle">
+                <span class="chinese">4&nbsp;建平台</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="english">Establish a platform</span>
+              </p>
+              <span class="stepIntroduce">
+            通过对企业现状能力／资源调研分析，行业趋势及产业链利益相关方价值发现，互联网技术驱动商业模式创新等领域的深入探讨，帮助企业明晰互联网转型定位与方向，对企业进行商业模式创新设计，为企业设计独特、高价值的发展之路。
+          </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 合作伙伴 -->
+      <div class="partner text-center" id="partner">
+        <span class="partnerTitle inline-block">合作伙伴</span>
+        <div class="row partnerList">
+          <div class="col-lg-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <img src="imgs/wanxinchuanmei-.png" class="img-responsive inline" alt="皖新logo">
+            <br>
+            <span class="partnerName inline-block">皖新传媒</span>
+          </div>
+          <div class="col-lg-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <img src="imgs/huahanchuanmei.png" class="img-responsive inline" alt="华瀚logo">
+            <br>
+            <span class="partnerName inline-block">华瀚传媒</span>
+          </div>
+          <div class="col-lg-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <img src="imgs/chenggeshangye-.png" class="img-responsive inline" alt="城格logo">
+            <br>
+            <span class="partnerName inline-block">城格商业</span>
+          </div>
+          <div class="col-lg-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <img src="imgs/runheruanjian-.png" class="img-responsive inline" alt="润和logo">
+            <br>
+            <span class="partnerName inline-block">润和软件</span>
+          </div>
+          <div class="col-lg-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <img src="imgs/jinglunchunmei-.png" class="img-responsive inline" alt="经纶logo">
+            <br>
+            <span class="partnerName inline-block">经纶传媒</span>
+          </div>
+          <div class="col-lg-lg-2 col-md-2 col-sm-2 col-xs-4">
+            <img src="imgs/chezhibao2.png" class="img-responsive inline" alt="车置宝logo">
+            <br>
+            <span class="partnerName inline-block">车置宝</span>
+          </div>
+        </div>
+      </div>
+      <!-- 联系我们 -->
+      <div class="contact text-center relative fullWidth" id="contact">
+        <p class="colorWhite"><span>花一分钟提交</span>&nbsp;<span style="color:#00be5e;">您的需求</span></p>
+        <span class="contactWays inline-block">
+        邮箱:market@jszhaomi.com|电话:025-52375905
+      </span>
+        <div class="form">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="input-group fullWidth ">
+                <div class="input-group-addon bgWhite">
+                  <img src="imgs/user-icon.png" alt="user">
+                </div>
+                <input class="form-control" type="text" id="name" placeholder="姓名：">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="input-group pull-right fullWidth ">
+                <div class="input-group-addon bgWhite">
+                  <img src="imgs/dianhua-.png" alt="tel">
+                </div>
+                <input class="form-control" type="text" id="tel" placeholder="电话：">
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <textarea class="need fullWidth" id="need" placeholder="您的需求..."></textarea>
+            </div>
+          </div>
+          <button class="submit colorWhite">立即提交</button>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer fullWidth">
+        <ul class="inline-block fullWidth">
+          <li class="link inline"><a href="javascript:;" class="colorWhite">首页</a></li>
+          <li class="link inline"><a href="javascript:;" class="colorWhite">服务内容</a></li>
+          <li class="link inline"><a href="javascript:;" class="colorWhite">经典案例</a></li>
+          <li>
+            <a href="javascript:;"><img src="imgs/logo_02.png" alt=""></a>
+          </li>
+          <li class="link inline"><a href="javascript:;" class="colorWhite">服务流程</a></li>
+          <li class="link inline"><a href="javascript:;" class="colorWhite">合作伙伴</a></li>
+          <li class="link inline"><a href="javascript:;" class="colorWhite">联系我们</a></li>
+        </ul>
+        <div class="right text-center fullWidth">
+          &copy;Jszhaomi,2016.All Right Reserved.&nbsp;&nbsp;&nbsp;
+          <a href="http://www.miitbeian.gov.cn">苏ICP备15013612号-1</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="build/toastr.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="build/script.min.js"></script>
+    <script type="text/javascript">
+    $youziku.load("#font", "276f2bf4b8ce40a2ac554e10ed2748e1", "Source-Han-Normal");
+    $youziku.draw();
+    </script>
+  </body>
+
+</html>

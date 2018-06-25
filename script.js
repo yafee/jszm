@@ -1,3 +1,9 @@
+/*
+ * @Author: yafee
+ * @Date:   2016-11-25 17:03:08
+* @Last modified by:   yafee
+* @Last modified time: 2017-01-10T20:50:31+08:00
+ */
 $(function() {
   toastr.options = {
     "positionClass": "toast-top-center",
@@ -9,13 +15,19 @@ $(function() {
   $('.main>div[id]').each(function() {
     hgArr.push($(this).offset().top);
   });
+  console.log(hgArr);
   $('.navList li,.menu li,.footer li.link').on('click', function() {
     var index = $(this).index();
+
     //底部导航栏
     if ($(this).hasClass('link') && index > 2) {
       index = index - 1;
     }
-    $('body,html').animate({ scrollTop: hgArr[index] - navBarHg }, 500);
+
+
+    $('body,html').animate({
+      scrollTop: hgArr[index] - navBarHg
+    }, 500);
     if (!$(this).hasClass('inline')) {
       $('.menu').toggle();
     }
@@ -60,7 +72,11 @@ $(function() {
       $.ajax({
         type: 'POST',
         url: 'http://120.26.120.14:3000',
-        data: JSON.stringify({ username: name, mobile: tel, need: need }),
+        data: JSON.stringify({
+          username: name,
+          mobile: tel,
+          need: need
+        }),
         contentType: "application/json",
         crossDomain: true,
         success: function(data) {
@@ -69,7 +85,7 @@ $(function() {
         },
         error: function(data) {
           toastr.error(data.msg);
-          $('#name,#tel,#need').val('');
+          $('#name,#tel,#need').val("");
         }
       });
     }
